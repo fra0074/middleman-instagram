@@ -1,0 +1,84 @@
+.container-navbar {
+  width: 80%;
+  margin: 0 auto;
+  clear: both;
+}
+
+nav.scroll-navbar a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+}
+
+nav.scroll-navbar {
+  background: #fff;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  transition: all 0.5s;
+
+}
+nav.scroll-navbar.scrollUp {
+  transform: translateY(-80px);
+
+}
+nav.scroll-navbar ul.navbar-menu {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+nav.scroll-navbar ul.navbar-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav.scroll-navbar ul.navbar-menu li a {
+  color: #666;
+  font-size: 14px;
+}
+nav.scroll-navbar a#brand {
+  text-transform: uppercase;
+  float: left;
+  font-weight: 800;
+  font-size: 20px;
+}
+nav.scroll-navbar button {
+  background: none;
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+}
+nav.scroll-navbar button span {
+  width: 30px;
+  height: 40px;
+  height: 2px;
+  background: #333;
+  display: block;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  nav.scroll-navbar ul.navbar-menu {
+    display: none;
+  }
+
+  nav.scroll-navbar button {
+    display: block;
+  }
+}
+
+.logo-navbar {
+
+  width: 157px;
+
+}

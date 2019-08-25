@@ -1,0 +1,83 @@
+.container-navbar {
+  width: 80%;
+  margin: 0 auto;
+  clear: both;
+}
+
+nav.fixed-navbar a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+nav.fixed-navbar {
+  background: transparent;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+
+
+}
+nav.fixed-navbar.scrollUp {
+  transform: translateY(-80px);
+
+}
+nav.fixed-navbar ul.navbar-menu {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+nav.fixed-navbar ul.navbar-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav.fixed-navbar ul.navbar-menu li a {
+  color: white;
+  font-size: 14px;
+}
+nav.fixed-navbar a#brand {
+  text-transform: uppercase;
+  float: left;
+  font-weight: 800;
+  font-size: 20px;
+}
+nav.fixed-navbar button {
+  background: none;
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+}
+nav.fixed-navbar button span {
+  width: 30px;
+  height: 40px;
+  height: 2px;
+  background: #333;
+  display: block;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  nav.fixed-navbar ul.navbar-menu {
+    display: none;
+  }
+
+  nav.fixed-navbar button {
+    display: block;
+  }
+}
+
+.logo-navbar {
+
+  width: 157px;
+
+}
